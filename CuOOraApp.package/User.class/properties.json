@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "CuOOraApp",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"username",
+		"password",
+		"creationDate",
+		"following",
+		"interests",
+		"questions",
+		"answers"
+	],
+	"name" : "User",
+	"type" : "normal"
+}
