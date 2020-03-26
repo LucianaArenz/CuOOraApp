@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "WAComponent",
 	"category" : "CuOOraApp",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"questions",
 		"users",
-		"topics",
-		"questions"
+		"topics"
 	],
 	"name" : "App",
 	"type" : "normal"
