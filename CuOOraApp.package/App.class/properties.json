@@ -1,15 +1,15 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
+	"commentStamp" : "LucaSartori 3/27/2020 09:42",
+	"super" : "WAComponent",
 	"category" : "CuOOraApp",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [
-		"users",
-		"topics",
-		"questions"
+	"classvars" : [
+		"Questions",
+		"Topics",
+		"Users"
 	],
+	"instvars" : [ ],
 	"name" : "App",
 	"type" : "normal"
 }

@@ -1,19 +1,19 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "LucaSartori 3/27/2020 09:42",
 	"super" : "Object",
 	"category" : "CuOOraApp",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [
-		"username",
-		"password",
-		"creationDate",
-		"following",
-		"interests",
-		"questions",
-		"answers"
+	"classvars" : [
+		"Answers",
+		"CreationDate",
+		"Following",
+		"Interests",
+		"Password",
+		"Questions",
+		"Username"
 	],
+	"instvars" : [ ],
 	"name" : "User",
 	"type" : "normal"
 }

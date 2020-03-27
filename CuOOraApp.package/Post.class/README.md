@@ -1,0 +1,1 @@
+Post comment: 'Abstract class to represent a post'.

@@ -1,0 +1,1 @@
+Question comment: 'Question class. Implements Post'.

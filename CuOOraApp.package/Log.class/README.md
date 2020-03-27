@@ -1,0 +1,1 @@
+Log comment: 'Log Class. Represents a user activity on a Post'.
