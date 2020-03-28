@@ -1,0 +1,4 @@
+initialization
+initialize
+	Name := ''.
+	Description := ''.
