@@ -5,11 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
-		"ActivityLog:Log",
-		"Author:User",
-		"CreationDate:DateAndTime",
-		"Dislikes:Integer",
-		"Likes:Integer"
+		"ActivityLog",
+		"Author",
+		"CreationDate",
+		"Dislikes",
+		"Likes"
 	],
 	"instvars" : [ ],
 	"name" : "Post",

@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [
 		"Question",
-		"Text",
-		"User"
+		"Text"
 	],
 	"instvars" : [ ],
 	"name" : "Answer",

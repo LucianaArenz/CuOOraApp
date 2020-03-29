@@ -8,7 +8,7 @@
 		"Answers",
 		"Description",
 		"Title",
-		"Topic"
+		"Topics"
 	],
 	"instvars" : [ ],
 	"name" : "Question",
