@@ -8,22 +8,22 @@ upvote: user
 	actionDownvote := 'DOWNVOTE'.
 	self.ActivityLog do:
 		[
-			:each :i | each.User.Username = user.Username
+			:each :i | each.User = user
 				ifTrue:[userLog := each . userIndex := i]
 		].
 	(userLog = nil)
-	ifTrue: [self.Likes := self.Likes + 1 . self addLog: userIndex user actionUpvote]
+	ifTrue: [self.Likes := self.Likes + 1 . self addLog: userIndex user: user action: 'UPVOTE']
 	ifFalse: [
-		userLog.Activity = actionDownvote
+		userLog Action = 'DOWNVOTE'
 		ifTrue: [
 			self.Likes := self.Likes -1.
-			self addLog userIndex user actionUpvote
+			self addLog: userIndex user: user action: 'DOWNVOTE'
 		].
-		userLog.Activity = actionUpvote
+		userLog Action = 'UPVOTE'
 		ifTrue: [
 			self.Dislikes := self.Dislikes - 1.
 			self.Likes := self.Likes + 1.
-			self addLog userIndex user actionUpvote
+			self addLog: userIndex user: user action: 'UPVOTE'
 		].
 	]
 	
