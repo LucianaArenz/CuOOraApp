@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "LucaSartori 3/27/2020 09:42",
-	"super" : "Object",
+	"commentStamp" : "",
+	"super" : "WAComponent",
 	"category" : "CuOOraApp",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -10,6 +10,6 @@
 		"Users"
 	],
 	"instvars" : [ ],
-	"name" : "App",
+	"name" : "AppComponent",
 	"type" : "normal"
 }

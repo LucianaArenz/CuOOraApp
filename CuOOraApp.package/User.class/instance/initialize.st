@@ -1,7 +1,7 @@
 initialization
-username: aUser password: aString
-	Username := aUser.
-	Password := aString.
+initialize
+	Username := ''.
+	Password := ''.
 	Following := OrderedCollection new.
 	Questions := OrderedCollection new.
 	Interests := OrderedCollection new.
