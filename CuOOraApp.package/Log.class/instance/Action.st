@@ -1,3 +1,3 @@
 accesing
-Action
-	^ Action
+action
+	^action.

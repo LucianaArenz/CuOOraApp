@@ -1,16 +1,16 @@
 {
 	"commentStamp" : "LucaSartori 3/27/2020 09:36",
 	"super" : "Post",
-	"category" : "CuOOraApp",
+	"category" : "CuOOraApp-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"Answers",
-		"Description",
-		"Title",
-		"Topics"
+	"classvars" : [ ],
+	"instvars" : [
+		"answers",
+		"description",
+		"title",
+		"topics"
 	],
-	"instvars" : [ ],
 	"name" : "Question",
 	"type" : "normal"
 }

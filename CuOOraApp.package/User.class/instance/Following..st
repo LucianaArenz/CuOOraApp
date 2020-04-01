@@ -1,3 +1,3 @@
 accesing
-Following: someFollows
-	Following:= someFollows.
+following: someFollows
+	following:= someFollows.

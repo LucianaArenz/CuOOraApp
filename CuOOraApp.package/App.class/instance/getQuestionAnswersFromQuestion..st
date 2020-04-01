@@ -1,6 +1,6 @@
 actions
 getQuestionAnswersFromQuestion: aQuestion
-	Questions
+	questions
 		do: [ :question | 
 			question = aQuestion
 				ifTrue: [ ^ question Answers ] ]

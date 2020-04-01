@@ -1,3 +1,3 @@
 accesing
-Action: anAction
-	Action := anAction
+action: anAction
+	action:= anAction.

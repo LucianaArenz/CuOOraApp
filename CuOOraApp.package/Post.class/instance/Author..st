@@ -1,3 +1,3 @@
 accesing
-Author: anAuthor
-	Author:= anAuthor.
+author: anAuthor
+	author:= anAuthor.

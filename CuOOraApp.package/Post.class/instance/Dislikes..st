@@ -1,3 +1,3 @@
 accesing
-Dislikes: aNumber
-	Dislikes:= aNumber.
+dislikes: aNumber
+	dislikes:= aNumber.

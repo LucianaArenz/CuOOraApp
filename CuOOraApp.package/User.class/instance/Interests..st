@@ -1,3 +1,3 @@
 accesing
-Interests: someInterests
-	Interests:= someInterests.
+interests: someInterests
+	interests:= someInterests.

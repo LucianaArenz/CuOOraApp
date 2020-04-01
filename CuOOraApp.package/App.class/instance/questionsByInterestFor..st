@@ -4,7 +4,7 @@ questionsByInterestFor: aUser
 	totalQuestion := OrderedCollection new.
 	aUser Interests
 		do: [ :tag | 
-			Questions
+			questions
 				select: [ :question | 
 					(question Topics detect: [ :aTag | aTag = tag ])
 						ifTrue: [ totalQuestion add: question ] ] ].

@@ -1,3 +1,3 @@
 accesing
-ActivityLog: aLog
-	ActivityLog:= aLog.
+activityLog: aLog
+	activityLog:= aLog.

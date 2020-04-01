@@ -1,3 +1,3 @@
 accesing
-Description: aText
-	Description := aText
+description: aText
+	description := aText.

@@ -1,3 +1,3 @@
 accesing
-Name
-	^ Name
+name
+	^name.

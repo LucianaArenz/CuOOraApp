@@ -1,3 +1,3 @@
 accesing
-CreationDate: aDate
-	CreationDate:= aDate.
+creationDate: aDate
+	creationDate:= aDate.

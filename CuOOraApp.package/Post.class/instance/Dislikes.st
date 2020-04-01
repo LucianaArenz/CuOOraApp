@@ -1,3 +1,3 @@
 accesing
-Dislikes
-	^Dislikes.
+dislikes
+	^dislikes.

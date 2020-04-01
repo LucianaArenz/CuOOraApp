@@ -1,3 +1,3 @@
 accesing
-Author
-	^Author.
+author
+	^author.

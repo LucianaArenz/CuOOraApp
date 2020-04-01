@@ -1,3 +1,3 @@
 accesing
-Password
-	^ Password
+password
+	^password.

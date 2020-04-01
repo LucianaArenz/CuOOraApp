@@ -1,3 +1,3 @@
 adding
 addQuestion: question
-	Questions add: question
+	questions add: question.

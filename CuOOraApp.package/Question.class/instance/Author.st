@@ -1,3 +1,0 @@
-accesing
-Author
-	super.Author.

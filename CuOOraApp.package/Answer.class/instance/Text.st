@@ -1,3 +1,3 @@
 accesing
-Text
-	^Text.
+text
+	^text.

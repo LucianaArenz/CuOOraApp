@@ -1,3 +1,3 @@
 accesing
-Title: aTitle
-	Title:= aTitle.
+title: aTitle
+	title:= aTitle.

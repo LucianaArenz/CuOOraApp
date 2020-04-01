@@ -1,3 +1,3 @@
 adding
 addFollow: anotherUser
-	Following add: anotherUser
+	following add: anotherUser.

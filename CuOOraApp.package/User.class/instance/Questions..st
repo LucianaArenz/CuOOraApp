@@ -1,3 +1,3 @@
 accesing
-Questions: someQuestions
-	Questions:= someQuestions.
+questions: someQuestions
+	questions:= someQuestions.

@@ -1,3 +1,0 @@
-accesing
-ActivityLog
-	super.ActivityLog.

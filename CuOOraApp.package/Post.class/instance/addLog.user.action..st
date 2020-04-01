@@ -1,8 +1,7 @@
 adding
 addLog: userIndex user: aUser action: anAction
 	"replaces user activityLog"
-
 	|newLog|
-	self.ActivityLog removeAtIndex: userIndex.
+	activityLog removeIndex: userIndex.
 	newLog := Log user: aUser action: anAction timestamp: DateAndTime now.
-	self.ActivityLog add newLog .
+	activityLog add newLog .

@@ -1,3 +1,3 @@
 accesing
-Topics: someTopics
-	Topics:= someTopics.
+topics: someTopics
+	topics:= someTopics.

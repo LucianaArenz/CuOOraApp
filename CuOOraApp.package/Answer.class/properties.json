@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "LucaSartori 3/27/2020 09:43",
 	"super" : "Post",
-	"category" : "CuOOraApp",
+	"category" : "CuOOraApp-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"Question",
-		"Text"
+	"classvars" : [ ],
+	"instvars" : [
+		"question",
+		"text"
 	],
-	"instvars" : [ ],
 	"name" : "Answer",
 	"type" : "normal"
 }

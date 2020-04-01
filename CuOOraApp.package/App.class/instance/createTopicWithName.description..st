@@ -3,4 +3,4 @@ createTopicWithName: aName description: aDescription
 	| topic |
 	topic := Tag new.
 	topic name: aName description: aDescription.
-	Topics add: topic
+	topics add: topic

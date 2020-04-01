@@ -1,3 +1,3 @@
 accesing
-Likes: aNumber
-	Likes:= aNumber.
+likes: aNumber
+	likes:= aNumber.

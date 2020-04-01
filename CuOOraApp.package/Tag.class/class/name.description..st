@@ -1,6 +1,6 @@
 initialization
 name: aName description: aDescription
-	self new .
-	self.Name := aName.
-	self.Description := aDescription.
-	self yourself.
+	|tmpTag|
+	tmpTag:= self new .
+	tmpTag initializeWithName: aName description: aDescription.
+	^tmpTag.

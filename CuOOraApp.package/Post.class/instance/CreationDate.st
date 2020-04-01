@@ -1,3 +1,3 @@
 accesing
-CreationDate
-	^CreationDate.
+creationDate
+	^creationDate.

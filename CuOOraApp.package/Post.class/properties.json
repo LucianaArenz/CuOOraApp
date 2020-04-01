@@ -1,17 +1,17 @@
 {
 	"commentStamp" : "LucaSartori 3/27/2020 09:35",
 	"super" : "WAComponent",
-	"category" : "CuOOraApp",
+	"category" : "CuOOraApp-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"ActivityLog",
-		"Author",
-		"CreationDate",
-		"Dislikes",
-		"Likes"
+	"classvars" : [ ],
+	"instvars" : [
+		"activityLog",
+		"author",
+		"creationDate",
+		"dislikes",
+		"likes"
 	],
-	"instvars" : [ ],
 	"name" : "Post",
 	"type" : "normal"
 }

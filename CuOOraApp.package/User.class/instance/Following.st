@@ -1,3 +1,3 @@
 accesing
-Following
-	^ Following
+following
+	^following.

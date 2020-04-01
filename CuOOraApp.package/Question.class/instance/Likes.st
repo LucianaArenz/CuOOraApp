@@ -1,3 +1,0 @@
-accesing
-Likes
-	super.Likes.

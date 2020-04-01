@@ -1,7 +1,6 @@
 initialization
 user: aUser action: anAction timestamp: aTimestamp
-	self new .
-	self.Action := anAction.
-	self.Timestamp := aTimestamp.
-	self.User := aUser.
-	self yourself.
+	|tmpLog|
+	tmpLog:= self new.
+	tmpLog initializeWithUser: aUser action: anAction timestamp: aTimestamp.
+	^tmpLog.

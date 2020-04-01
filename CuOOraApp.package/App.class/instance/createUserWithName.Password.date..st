@@ -4,4 +4,4 @@ createUserWithName: aUsername Password: aPassword date: aDate
 	user := User new.
 	user username: aUsername password: aPassword.
 	user CreationDate: aDate.
-	Users add: user
+	users add: user

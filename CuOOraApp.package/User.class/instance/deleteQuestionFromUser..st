@@ -1,3 +1,3 @@
 adding elements
 deleteQuestionFromUser: aQuestion
-	Questions remove: aQuestion
+	questions remove: aQuestion.

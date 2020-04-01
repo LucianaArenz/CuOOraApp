@@ -1,3 +1,3 @@
 accesing
-Name: aText
-	Name := aText
+name: aText
+	name := aText.

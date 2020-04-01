@@ -1,3 +1,3 @@
 accesing
-Description: aDescription
-	Description:= aDescription.
+description: aDescription
+	description:= aDescription.

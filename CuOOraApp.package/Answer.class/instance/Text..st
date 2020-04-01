@@ -1,3 +1,3 @@
 accesing
-Text: aText
-	Text := aText
+text: aText
+	text := aText.

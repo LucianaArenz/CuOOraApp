@@ -1,3 +1,3 @@
 accesing
-ActivityLog
-	^ActivityLog.
+activityLog
+	^activityLog.

@@ -1,3 +1,3 @@
 accesing
-Answers: someAnswers
-	Answers:= someAnswers.
+answers: someAnswers
+	answers:= someAnswers.
