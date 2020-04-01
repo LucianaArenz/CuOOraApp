@@ -1,3 +1,3 @@
 actions
 createFollowingUser: aUser to: anotherUser
-	aUser Following add: anotherUser
+	aUser addFollow: anotherUser
