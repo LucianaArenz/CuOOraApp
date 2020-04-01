@@ -1,28 +1,26 @@
 modifying
 upvote: user
 	"Method to trigger an upvote"
-	|userLog userIndex actionUpvote actionDownvote|
+	|userLog userIndex|
 	userLog := nil.
 	userIndex := nil.
-	actionUpvote := 'UPVOTE'.
-	actionDownvote := 'DOWNVOTE'.
-	self.ActivityLog do:
+	ActivityLog do:
 		[
 			:each :i | each.User = user
 				ifTrue:[userLog := each . userIndex := i]
 		].
-	(userLog = nil)
-	ifTrue: [self.Likes := self.Likes + 1 . self addLog: userIndex user: user action: 'UPVOTE']
+	(userLog isNil)
+	ifTrue: [Likes := Likes + 1 . self addLog: userIndex user: user action: 'UPVOTE']
 	ifFalse: [
 		userLog Action = 'DOWNVOTE'
 		ifTrue: [
-			self.Likes := self.Likes -1.
+			Likes := Likes -1.
 			self addLog: userIndex user: user action: 'DOWNVOTE'
 		].
 		userLog Action = 'UPVOTE'
 		ifTrue: [
-			self.Dislikes := self.Dislikes - 1.
-			self.Likes := self.Likes + 1.
+			Dislikes := Dislikes - 1.
+			Likes := Likes + 1.
 			self addLog: userIndex user: user action: 'UPVOTE'
 		].
 	]
