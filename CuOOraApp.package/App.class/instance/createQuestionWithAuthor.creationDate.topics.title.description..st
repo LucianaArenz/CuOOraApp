@@ -8,5 +8,5 @@ createQuestionWithAuthor: aUser creationDate: aDate topics: aTag title: aTitle d
 		topics: aTag
 		title: aTitle
 		description: aDescription.
-	self Questions add: question.
+	self questions add: question.
 	aUser addQuestion: question
