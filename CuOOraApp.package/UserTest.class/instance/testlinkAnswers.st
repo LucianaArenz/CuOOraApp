@@ -9,7 +9,7 @@ testlinkAnswers
 	answerTwo := Answer new.
 	answerOne text: 'Mundo'.
 	answerOne question: OrderedCollection new.
-	user linkAnswers: answerOne.
-	user linkAnswers: answerTwo.
+	user addAnswer: answerOne.
+	user addAnswer: answerTwo.
 	self assert: user answers size equals: 2.
 	self deny: user answers equals: 0
