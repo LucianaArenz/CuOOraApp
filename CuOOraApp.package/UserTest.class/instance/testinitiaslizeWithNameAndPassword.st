@@ -1,11 +1,12 @@
 tests
 testinitiaslizeWithNameAndPassword
-	 
+	|aDate|
 	user := User new.
-	user initializeWithName: 'Lu' password: '1234'.
+	aDate:= DateAndTime now.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
 	self assert: user username equals: 'Lu'.
 	self assert: user password equals: '1234'.
-	self assert: user creationDate asDate equals: DateAndTime now asDate.
+	self assert: user creationDate equals: aDate.
 	self assert: user following size equals: 0.
 	self assert: user interests size equals: 0.
 	self assert: user questions size equals: 0.

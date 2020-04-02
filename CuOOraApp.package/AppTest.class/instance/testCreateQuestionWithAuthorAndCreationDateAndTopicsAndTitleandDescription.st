@@ -1,11 +1,11 @@
 tests
 testCreateQuestionWithAuthorAndCreationDateAndTopicsAndTitleandDescription
 	| app aDate tag |
+	aDate := DateAndTime now.
 	app := App new.
 	app initialize.
 	user := User new.
-	user initializeWithName: 'Lu' password: '1234'.
-	aDate := DateAndTime now.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
 	tag := Tag new.
 	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
 	app

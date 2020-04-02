@@ -4,7 +4,7 @@ testInitializeWithAuthorAndDescriptionAndTitleAndTopicsAndcreationDate
 	question := Question new.
 	aDate := DateAndTime now.
 	user := User new.
-	user initializeWithName: 'Lu' password: '1234'.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
 	tag := Tag new.
 	tag initializeWithName: 'OO' description: 'Orientacion a Objetos'.
 	question

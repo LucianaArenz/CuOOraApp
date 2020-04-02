@@ -1,12 +1,13 @@
 tests
 testAddInterestToUser
-	| tag app |
+	| tag app aDate|
+	aDate:= DateAndTime now.
 	app := App new.
 	app initialize.
 	tag := Tag new.
 	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
 	user := User new.
-	user initializeWithName: 'Lu' password: '1234'.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
 	app addInterest: tag toUser: user.
 	self assert: user username equals: 'Lu'.
 	self assert: user password equals: '1234'.

@@ -1,0 +1,3 @@
+initialization
+setUp
+	user:= nil.
