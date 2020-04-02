@@ -1,0 +1,3 @@
+removing
+removeAllAnswers
+	answers removeAll.

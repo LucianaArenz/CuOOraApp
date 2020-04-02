@@ -1,16 +1,16 @@
 calculating
 calculatePoints
+	"sum of all user participations. Each question sums 20 points, each anwer sums 50 points, likes are 1 point, dislikes -1 point"
 	| sumaPreguntas sumaRespuestas sumaLikes sumaDislikes |
-	sumaPreguntas:= 0. sumaLikes:= 0. sumaRespuestas:= 0. sumaDislikes:= 0.
+	sumaLikes:= 0. sumaDislikes:=0.
+	sumaPreguntas:= questions size * 20. sumaRespuestas:= answers size * 50.
 	questions
-		do: [ :each | 
-			sumaPreguntas := sumaPreguntas + 20.
-			sumaLikes := sumaLikes + 1.
-			sumaDislikes := sumaDislikes + 1 ].
+		do: [ :each |
+			sumaLikes := sumaLikes + each likes.
+			sumaDislikes := sumaDislikes + each dislikes ].
 	answers
-		do: [ :each | 
-			sumaRespuestas := sumaRespuestas + 30.
-			sumaLikes := sumaLikes + 1.
-			sumaDislikes := sumaDislikes + 1 ].
+		do: [ :each |
+			sumaLikes := sumaLikes + each likes.
+			sumaDislikes := sumaDislikes + each dislikes ].
 	sumaLikes := sumaLikes - sumaDislikes.
 	^ sumaPreguntas + sumaRespuestas + sumaLikes
