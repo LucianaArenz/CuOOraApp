@@ -3,8 +3,8 @@ createAnswerWithAuthor: aUser creationDate: aDate text: aText question: aQuestio
 	| answer |
 	answer := Answer new.
 	answer
-		author: aUser
-		creationDate: aDate
+		initializeWithAuthor: aUser
 		text: aText
-		question: aQuestion.
+		question: aQuestion
+		creationDate: aDate.
 	aUser linkAnswers: answer

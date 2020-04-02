@@ -3,10 +3,10 @@ createQuestionWithAuthor: aUser creationDate: aDate topics: aTag title: aTitle d
 	| question |
 	question := Question new.
 	question
-		author: aUser
-		creationDate: aDate
-		topics: aTag
+		initializeWithAuthor: aUser
+		description: aDescription
 		title: aTitle
-		description: aDescription.
+		topics: aTag
+		creationDate: aDate.
 	self questions add: question.
 	aUser addQuestion: question
