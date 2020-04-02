@@ -4,4 +4,4 @@ deleteQuestionFromApp: aQuestion
 
 	(self Questions detect: [ :question | question = aQuestion ])
 		ifTrue: [ questions remove: aQuestion ].
-	aQuestion Author deleteQuestionFromUser: aQuestion
+	aQuestion Author removeQuestion: aQuestion

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"questions",
 		"topics",
-		"users"
+		"users",
+		"loggedUser"
 	],
 	"name" : "App",
 	"type" : "normal"

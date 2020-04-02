@@ -1,6 +1,5 @@
 actions
 createTopicWithName: aName description: aDescription
 	| topic |
-	topic := Tag new.
-	topic name: aName description: aDescription.
-	topics add: topic
+	topic := Tag name: aName description: aDescription.
+	topics add: topic.

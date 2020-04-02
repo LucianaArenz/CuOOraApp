@@ -1,21 +1,23 @@
 modifying
 downvote: user
-	"Method to trigger a downvote"
-	|userLog index|
-	userLog := Log new.
-	index := nil.
-	activityLog do:
-		[
-			:each :i | each user == user
-				ifTrue:[userLog := each . index := i]
-		].
+	"Method to trigger an upvote"
+	|userLog|
+	userLog := self getUserLog: user.
 	(userLog isNil)
-	ifTrue: [likes := likes + 1 . self addLog: index user: user action: 'DOWNVOTE']
+	ifTrue: [
+		dislikes= dislikes + 1.
+		self removeLog: userLog.
+		userLog action: 'DOWNVOTE'.
+		self addLog: userLog.
+	]
 	ifFalse: [
-		userLog Action = 'UPVOTE'
+		userLog action = 'UPVOTE'
 		ifTrue: [
-			likes := likes -1.
-			self addLog: index user: user action: 'DOWNVOTE'
+			likes := likes - 1.
+			dislikes:= dislikes + 1.
+			self removeLog: userLog.
+			userLog action: 'DOWNVOTE'.
+			self addLog: userLog.
 		]
 	]
 	

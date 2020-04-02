@@ -1,3 +1,3 @@
 adding elements
-deleteQuestionFromUser: aQuestion
+removeQuestion: aQuestion
 	questions remove: aQuestion.
