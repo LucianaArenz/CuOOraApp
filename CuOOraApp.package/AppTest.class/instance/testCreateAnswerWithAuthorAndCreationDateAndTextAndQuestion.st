@@ -15,7 +15,8 @@ testCreateAnswerWithAuthorAndCreationDateAndTextAndQuestion
 		initializeWithAuthor: userAuthor
 		description: 'Orientacion a objetos'
 		title: 'Como diagramar un UML'
-		topics: tag.
+		topics: tag
+		creationDate: aDate.
 	app
 		createAnswerWithAuthor: user
 		creationDate: aDate
