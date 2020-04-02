@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testlinkAnswers
 	user := User new.
 	user initialize.

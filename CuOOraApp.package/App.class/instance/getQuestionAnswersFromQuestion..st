@@ -1,6 +1,8 @@
 actions
 getQuestionAnswersFromQuestion: aQuestion
-	questions
-		do: [ :question | 
-			question = aQuestion
-				ifTrue: [ ^ question Answers ] ]
+	|result|
+	result:= questions detect: [ :question | question = aQuestion]
+				ifNone: [ nil ].
+	(result isNil)
+	ifFalse: [ ^result answers ]
+	ifTrue: [ ^OrderedCollection new . ]

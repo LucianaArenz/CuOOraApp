@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testinitializeWithAuthorAndTextAndQuestionAndCreationDate
 	| question tag aDate answer userAuthor |
 	question := Question new.
