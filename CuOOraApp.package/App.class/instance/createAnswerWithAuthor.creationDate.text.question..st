@@ -3,3 +3,4 @@ createAnswerWithAuthor: aUser creationDate: aDate text: aText question: aQuestio
 	| answer |
 	answer := Answer author: aUser text: aText question: aQuestion creationDate: aDate.
 	aUser addAnswer: answer.
+	aQuestion addAnswer: answer.
