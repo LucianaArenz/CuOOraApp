@@ -1,6 +1,6 @@
 running
 tearDown
+	date:= nil.
 	user:= nil.
-	answerOne:= nil.
-	answerTwo:= nil.
+	topics:= nil.
 	super tearDown.

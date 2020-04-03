@@ -1,5 +1,5 @@
 tests
-testinitializeWithAuthorAndTextAndQuestionAndCreationDate
+testInitializeWithAuthorTextQuestionCreationDate
 	| question tag aDate answer userAuthor |
 	question := Question new.
 	aDate := DateAndTime now.

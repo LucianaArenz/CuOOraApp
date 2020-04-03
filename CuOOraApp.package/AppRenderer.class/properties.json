@@ -8,6 +8,6 @@
 	"instvars" : [
 		"app"
 	],
-	"name" : "AppComponent",
+	"name" : "AppRenderer",
 	"type" : "normal"
 }

@@ -1,13 +1,12 @@
 modifying
-downvote: user
-	"Method to trigger an upvote"
+downvote: aUser
+	"Method to trigger a downvote"
 	|userLog|
-	userLog := self getUserLog: user.
+	userLog := self getUserLog: aUser.
 	(userLog isNil)
 	ifTrue: [
-		dislikes= dislikes + 1.
-		self removeLog: userLog.
-		userLog action: 'DOWNVOTE'.
+		dislikes:= dislikes + 1.
+		userLog:= Log user: aUser action: 'DOWNVOTE' timestamp: DateAndTime now.
 		self addLog: userLog.
 	]
 	ifFalse: [

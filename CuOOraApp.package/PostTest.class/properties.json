@@ -1,15 +1,16 @@
 {
-	"commentStamp" : "LucaSartori 4/2/2020 16:13",
+	"commentStamp" : "LucaSartori 4/3/2020 17:14",
 	"super" : "TestCase",
 	"category" : "CuOOraApp-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"date",
+		"post",
 		"user",
-		"topics"
+		"user2",
+		"user3"
 	],
-	"name" : "UserTest",
+	"name" : "PostTest",
 	"type" : "normal"
 }

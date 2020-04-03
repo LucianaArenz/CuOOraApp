@@ -1,5 +1,5 @@
 tests
-testinitiaslizeWithNameAndPassword
+testInitializeWithNamePasswordCreationDate
 	|aDate|
 	user := User new.
 	aDate:= DateAndTime now.

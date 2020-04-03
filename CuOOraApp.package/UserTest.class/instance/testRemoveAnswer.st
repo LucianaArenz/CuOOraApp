@@ -1,6 +1,7 @@
-tests
-testlinkAnswers
+test
+testRemoveAnswer
 	|answerOne answerTwo|
+	self assert: user answers size equals: 0.
 	user := User new.
 	user initialize.
 	user answers: OrderedCollection new.
@@ -13,4 +14,5 @@ testlinkAnswers
 	user addAnswer: answerOne.
 	user addAnswer: answerTwo.
 	self assert: user answers size equals: 2.
-	self deny: user answers equals: 0
+	user removeAnswer: answerOne.
+	self assert: user answers size equals: 1.

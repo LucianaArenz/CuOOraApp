@@ -1,5 +1,5 @@
 tests
-testlinkAnswers
+testAddAnswer
 	|answerOne answerTwo|
 	user := User new.
 	user initialize.

@@ -1,5 +1,5 @@
 tests
-testInitializeWithNameAndDescription
+testInitializeWithNameDescription
 	| tag |
 	tag := Tag new.
 	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
