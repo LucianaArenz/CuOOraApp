@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "LucaSartori 4/2/2020 12:29",
-	"super" : "Object",
+	"super" : "WAComponent",
 	"category" : "CuOOraApp-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"user",
+		"username",
+		"password"
+	],
 	"name" : "LoginRenderer",
 	"type" : "normal"
 }
