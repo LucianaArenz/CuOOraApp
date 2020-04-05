@@ -1,0 +1,1 @@
+AccessGrantingComponent comment: 'Class to handle session'

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "LucaSartori 4/5/2020 20:10",
+	"super" : "WAComponent",
+	"category" : "CuOOraApp-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"username",
+		"password"
+	],
+	"name" : "AccessGrantingComponent",
+	"type" : "normal"
+}

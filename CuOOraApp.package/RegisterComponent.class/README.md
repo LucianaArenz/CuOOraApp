@@ -1,0 +1,1 @@
+RegisterRenderer comment: 'Class that handles user registration'.

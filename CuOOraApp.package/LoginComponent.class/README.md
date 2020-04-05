@@ -1,0 +1,1 @@
+LoginComponent comment: 'Class that handles login'
