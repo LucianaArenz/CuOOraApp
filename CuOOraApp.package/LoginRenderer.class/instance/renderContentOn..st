@@ -7,7 +7,7 @@ renderContentOn: aCanvas
 					aCanvas textInput on: #username of: self ].
 			aCanvas
 				paragraph: [ aCanvas label: 'Password: '.
-					aCanvas textInput on: #password of: self ].
+					aCanvas passwordInput on: #password of: self ].
 			aCanvas button
 				callback: [ self accept ];
 				with: 'Accept'.

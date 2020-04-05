@@ -1,0 +1,3 @@
+callbacks
+logOut
+	loggedUser:= nil.

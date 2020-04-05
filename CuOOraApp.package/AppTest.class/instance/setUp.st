@@ -1,5 +1,8 @@
 initialization
 setUp
-	user:= nil.
+	app:= App new.
+	app initialize.
+	app createUser:'admin' password:'admin'.
 	answerOne:= nil.
 	answerTwo:= nil.
+	app

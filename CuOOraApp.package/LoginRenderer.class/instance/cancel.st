@@ -1,4 +1,5 @@
 callbacks
 cancel
-	user := nil.
+	username := nil.
+	password:= nil.
 	self answer

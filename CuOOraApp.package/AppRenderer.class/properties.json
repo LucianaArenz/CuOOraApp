@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"app",
-		"users"
+		"loginRenderer",
+		"homeRenderer",
+		"errorRenderer"
 	],
 	"name" : "AppRenderer",
 	"type" : "normal"
