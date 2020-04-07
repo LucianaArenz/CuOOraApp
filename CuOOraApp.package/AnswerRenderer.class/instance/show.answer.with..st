@@ -1,5 +1,8 @@
 accesing
 show: aCanvas answer: oneAns with: user
+	| aQuestion |
+	aQuestion := oneAns question.
+	self showQuestion: aCanvas with: aQuestion.
 	aCanvas
 		div: [ aCanvas heading
 				level: 4;

@@ -1,9 +1,9 @@
 accessing
 style
-    ^ 'body {
+   " ^ 'body {
     color: #222;
     font-size: 75%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 h1 {
     color: #111;
@@ -21,4 +21,4 @@ li.overdue {
 }
 li.done {
     color: #264409;
-}'
+}'"
