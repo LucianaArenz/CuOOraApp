@@ -13,9 +13,8 @@ show: aCanvas question: oneQuestion with: user andAnswers: cantAnswers
 					aCanvas text: cantAnswers.
 					aCanvas space.
 					aCanvas anchor
-						callback: [ self renderAnswersOn: aCanvas question: oneQuestion ];
-						with: [
-							aCanvas button: 'Answers' ] ].
+						callback: [ self renderAnswersOn: aCanvas with: oneQuestion ];
+						with: [ aCanvas button: 'Answers' ] ].
 			aCanvas
 				paragraph: [ aCanvas text: oneQuestion likes.
 					aCanvas space.

@@ -1,11 +1,10 @@
 accesing
-show: aCanvas answer: oneAns with: user 
+show: aCanvas answer: oneAns with: user
 	aCanvas
 		div: [ aCanvas heading
 				level: 4;
-				with: 'Respuesta de ', user username.
-			aCanvas
-				paragraph: [ aCanvas text: oneAns description.].
+				with: 'Respuesta de ' , user username.
+			aCanvas paragraph: [ aCanvas text: oneAns description ].
 			aCanvas
 				paragraph: [ aCanvas text: oneAns likes.
 					aCanvas space.
