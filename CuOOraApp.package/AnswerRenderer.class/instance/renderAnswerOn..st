@@ -1,6 +1,6 @@
 rendering
 renderAnswerOn: aCanvas
-	aCanvas
+aCanvas
 		unorderedList: [ self collectAnswers 
 				do: [ :each | 
 					aCanvas listItem

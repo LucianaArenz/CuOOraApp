@@ -4,7 +4,7 @@ show: aCanvas answer: oneAns with: user
 		div: [ aCanvas heading
 				level: 4;
 				with: 'Respuesta de ' , user username.
-			aCanvas paragraph: [ aCanvas text: oneAns description ].
+			aCanvas paragraph: [ aCanvas text: oneAns text ].
 			aCanvas
 				paragraph: [ aCanvas text: oneAns likes.
 					aCanvas space.
