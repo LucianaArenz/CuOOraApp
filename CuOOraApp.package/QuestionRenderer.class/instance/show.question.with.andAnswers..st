@@ -5,19 +5,30 @@ show: aCanvas question: oneQuestion with: user andAnswers: cantAnswers
 				level: 4;
 				with: oneQuestion title.
 			aCanvas
-				paragraph: [ aCanvas heading
-						level: 5;
-						with: 'Realizada por: ' , user username , ' | '.
+				paragraph: [ aCanvas text: 'Realizada por: '.
+					aCanvas space.
+					aCanvas text: user username.
+					aCanvas space.
+					aCanvas text: '| '.
+					aCanvas text: cantAnswers.
+					aCanvas space.
 					aCanvas anchor
 						callback: [ self renderAnswersOn: aCanvas question: oneQuestion ];
-						with: [ aCanvas text: cantAnswers.
+						with: [
 							aCanvas button: 'Answers' ] ].
 			aCanvas
 				paragraph: [ aCanvas text: oneQuestion likes.
-					aCanvas button
+					aCanvas space.
+					aCanvas text: 'Likes'.
+					aCanvas space.
+					aCanvas text: oneQuestion dislikes.
+					aCanvas space.
+					aCanvas text: 'Dislikes' ].
+			aCanvas
+				paragraph: [ aCanvas button
 						callback: [ oneQuestion upvote: user ];
 						with: 'Liked'.
-					aCanvas text: oneQuestion dislikes.
+					aCanvas space.
 					aCanvas button
 						callback: [ oneQuestion downvote: user ];
 						with: 'disliked' ] ]
