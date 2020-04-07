@@ -3,13 +3,12 @@ upvote: aUser
 	"Method to trigger an upvote"
 	|userLog|
 	userLog := self getUserLog: aUser.
-	(userLog isNil)
-	ifTrue: [
+	userLog ifNil: [ 
 		likes:= likes + 1.
 		userLog:= Log user: aUser action: 'UPVOTE' timestamp: DateAndTime now.
 		self addLog: userLog.
-	]
-	ifFalse: [
+	].
+	userLog ifNotNil: [
 		userLog action = 'DOWNVOTE'
 		ifTrue: [
 			dislikes := dislikes - 1.
@@ -18,6 +17,6 @@ upvote: aUser
 			userLog action: 'UPVOTE'.
 			self addLog: userLog.
 		]
-	]
+	].
 	
 	

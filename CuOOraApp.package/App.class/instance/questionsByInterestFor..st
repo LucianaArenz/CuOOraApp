@@ -1,9 +1,11 @@
-actions
+deprecated
 questionsByInterestFor: aUser
-	| totalQuestion |
-	totalQuestion := OrderedCollection new.
+	| result |
+	result := nil.
 	aUser interests
-		do: [ :tag | 
-			questions select: [ :question | (question topics detect: [ :aTag | aTag = tag ])
-						ifTrue: [ totalQuestion add: question ] ] ].
-	^totalQuestion.
+		do: [ :aTag | 
+			(result:= questions select: [ :aQuestion |
+				aQuestion topics includes: aTag
+			]) .
+	].
+	^result.

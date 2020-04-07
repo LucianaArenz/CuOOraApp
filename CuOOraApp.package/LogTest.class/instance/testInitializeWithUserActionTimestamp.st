@@ -1,9 +1,9 @@
 tests
-testInitializeWithUserAndaction
+testInitializeWithUserActionTimestamp
 	| log aDate|
 	user := User new.
 	aDate:= DateAndTime now.
-	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate name: 'Lu'.
 	log := Log new.
 	log initializeWithUser: user action: 'UPVOTE' timestamp: aDate.
 	self assert: log user equals: user.

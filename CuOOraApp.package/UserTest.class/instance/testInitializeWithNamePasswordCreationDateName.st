@@ -1,9 +1,9 @@
 tests
-testInitializeWithNamePasswordCreationDate
+testInitializeWithNamePasswordCreationDateName
 	|aDate|
 	user := User new.
 	aDate:= DateAndTime now.
-	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate name: 'Lu'.
 	self assert: user username equals: 'Lu'.
 	self assert: user password equals: '1234'.
 	self assert: user creationDate equals: aDate.

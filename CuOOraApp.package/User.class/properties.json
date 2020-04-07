@@ -12,7 +12,8 @@
 		"interests",
 		"password",
 		"questions",
-		"username"
+		"username",
+		"name"
 	],
 	"name" : "User",
 	"type" : "normal"

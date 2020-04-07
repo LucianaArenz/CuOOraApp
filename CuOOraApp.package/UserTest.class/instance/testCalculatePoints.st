@@ -10,7 +10,7 @@ testCalculatePoints
 		creationDate: date.
 	user addQuestion: aQuestion1.
 	self assert: user calculatePoints equals: 20.
-	anotherUser:= User username: 'test2' password: '1234' creationDate: date.
+	anotherUser:= User username: 'test2' password: '1234' creationDate: date name: 'test2'.
 	aQuestion2:= Question
 		author: anotherUser
 		description: 'Orientacion a objetos'

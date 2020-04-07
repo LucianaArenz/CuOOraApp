@@ -4,9 +4,9 @@ testInitializeWithAuthorTextQuestionCreationDate
 	question := Question new.
 	aDate := DateAndTime now.
 	user := User new.
-	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate name: 'Lu'.
 	userAuthor := User new.
-	userAuthor initializeWithName: 'Juan' password: '1234' creationDate: aDate.
+	userAuthor initializeWithName: 'Juan' password: '1234' creationDate: aDate name: 'Juan'.
 	tag := Tag new.
 	answer := Answer new.
 	tag initializeWithName: 'OO' description: 'Orientacion a Objetos'.

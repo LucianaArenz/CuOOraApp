@@ -1,7 +1,8 @@
 initialization
-initializeWithName: aUsername password: aPassword creationDate: aDate
+initializeWithName: aUsername password: aPassword creationDate: aDate name: aName
 	username := aUsername.
 	password := aPassword.
+	name:= aName.
 	creationDate := aDate.
 	following := OrderedCollection new.
 	interests := OrderedCollection new.

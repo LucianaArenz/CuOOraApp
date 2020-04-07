@@ -1,5 +1,5 @@
 actions
 deleteQuestionFromApp: aQuestion
 	(questions detect: [ :question | question = aQuestion ])
-		ifTrue: [ aQuestion removeAllAnswers . questions remove: aQuestion ].
-	aQuestion author deleteQuestionFromUser: aQuestion.
+		ifNotNil: [ aQuestion removeAllAnswers . questions remove: aQuestion ].
+	aQuestion author removeQuestion: aQuestion.

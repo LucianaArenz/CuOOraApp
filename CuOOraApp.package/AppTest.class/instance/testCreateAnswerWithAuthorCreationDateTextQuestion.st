@@ -1,14 +1,12 @@
 tests
-testCreateAnswerWithAuthorAndCreationDateAndTextAndQuestion
-	| app userAuthor aQuestion aDate tag |
+testCreateAnswerWithAuthorCreationDateTextQuestion
+	| userAuthor aQuestion aDate tag |
 	aDate := DateAndTime now.
-	app := App new.
-	app initialize.
 	user := User new.
-	user initializeWithName: 'Lu' password: '1234' creationDate: aDate.
+	user initializeWithName: 'Lu' password: '1234' creationDate: aDate name: 'Lu'.
 	aQuestion := Question new.
 	userAuthor := User new.
-	userAuthor initializeWithName: 'Juan' password: '1234' creationDate: aDate.
+	userAuthor initializeWithName: 'Juan' password: '1234' creationDate: aDate name: 'Juan'.
 	tag := Tag new.
 	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
 	aQuestion
