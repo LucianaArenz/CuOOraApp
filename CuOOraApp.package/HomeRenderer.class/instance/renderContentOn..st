@@ -1,4 +1,7 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas paragraph with: 'HOLA'.
-	self renderLogoutOn: aCanvas.
+	questionRenderer := QuestionRenderer new.
+	questionRenderer appInstance: appInstance.
+	self renderHeaderOn: aCanvas.
+	self renderQuestionOn: aCanvas.
+	self renderLogoutOn: aCanvas

@@ -1,3 +1,3 @@
-initialization
+accessing
 appInstance: appI
 	appInstance := appI
