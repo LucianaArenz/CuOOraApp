@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	appInstance := nil
+	appInstance := nil.
+	answerRenderer := AnswerRenderer new
