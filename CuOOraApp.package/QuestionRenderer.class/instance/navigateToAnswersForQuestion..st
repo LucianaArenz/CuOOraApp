@@ -1,4 +1,4 @@
-as yet unclassified
+callbacks
 navigateToAnswersForQuestion: aQuestion
 	|answersRenderer|
 	answersRenderer:= AnswerRenderer new.

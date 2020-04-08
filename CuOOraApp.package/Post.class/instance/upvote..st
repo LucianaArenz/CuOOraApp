@@ -2,7 +2,6 @@ modifying
 upvote: aUser
 	"Method to trigger an upvote"
 	|userLog|
-	self halt.
 	userLog := self getUserLog: aUser.
 	userLog ifNil: [ 
 		likes:= likes + 1.

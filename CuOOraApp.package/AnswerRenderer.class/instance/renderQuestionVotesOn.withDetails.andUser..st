@@ -6,10 +6,10 @@ renderQuestionVotesOn: aCanvas withDetails: oneQuestion andUser: user
 			aCanvas text: oneQuestion dislikes.
 			aCanvas text: ' Dislikes' ].
 			aCanvas
-				paragraph: [ aCanvas button
+				paragraph: [ aCanvas anchor
 					callback: [ oneQuestion upvote: user ];
 					with: 'Like'.
 					aCanvas space.
-					aCanvas button
+					aCanvas anchor
 						callback: [ oneQuestion downvote: user ];
 						with: 'Dislike' ].

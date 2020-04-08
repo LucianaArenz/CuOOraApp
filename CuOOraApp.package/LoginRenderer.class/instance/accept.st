@@ -1,3 +1,0 @@
-callbacks
-accept
-	self answer

@@ -5,6 +5,7 @@ renderQuestionDetailsOn: aCanvas withDetails: oneQuestion user: user
 			aCanvas heading
 				level: 4;
 				with: oneQuestion title.
+			"self renderTopicsOn: aCanvas withDetails: oneQuestion getAllTopics."
 			aCanvas
 				paragraph: [
 					self renderUserDetailsOn: aCanvas withDetails: user.

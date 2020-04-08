@@ -1,4 +1,11 @@
 rendering
 renderContentOn: aCanvas
-	aCanvas div: 'TEXT'.
-	aCanvas div: user name.
+	aCanvas header: HeaderRenderer new.
+	aCanvas div: [
+		aCanvas span: 'Preguntas de '.
+		aCanvas span: user name.
+		aCanvas space.
+		self session user == user
+			ifFalse: [ self renderFollowInformationOn: aCanvas. ].
+	].
+	self renderUserQuestionsOn: aCanvas.
