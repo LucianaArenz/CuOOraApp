@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "LucaSartori 4/4/2020 20:44",
+	"commentStamp" : "LucaSartori 4/8/2020 18:16",
 	"super" : "WAComponent",
 	"category" : "CuOOraApp-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"homeLink",
 		"appInstance"
 	],
-	"name" : "HomeRenderer",
+	"name" : "PostRenderer",
 	"type" : "normal"
 }

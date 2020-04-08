@@ -1,4 +1,7 @@
 rendering
 renderAnswersOn: aCanvas with: oneQuestion
-	answerRenderer collectAnswers: oneQuestion answers.
-	answerRenderer renderAnswerOn: aCanvas.
+	|answersRenderer| 
+	answersRenderer:= AnswerRenderer new.
+	answersRenderer appInstance: appInstance.
+	answersRenderer collectAnswers: oneQuestion answers.
+	answersRenderer renderAnswerOn: aCanvas.

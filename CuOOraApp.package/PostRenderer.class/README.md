@@ -1,0 +1,1 @@
+PostRenderer comment: 'Abstract Class that hold shared logic for Posts'

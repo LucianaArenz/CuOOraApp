@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "LucaSartori 4/7/2020 11:27",
-	"super" : "WAComponent",
+	"super" : "PostRenderer",
 	"category" : "CuOOraApp-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"appInstance",
-		"answerRenderer",
-		"homeLink"
-	],
+	"instvars" : [ ],
 	"name" : "QuestionRenderer",
 	"type" : "normal"
 }
