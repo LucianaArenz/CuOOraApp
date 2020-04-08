@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"appInstance",
 		"collectAnswers"
 	],
 	"name" : "AnswerRenderer",
