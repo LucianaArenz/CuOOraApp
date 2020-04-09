@@ -1,8 +1,11 @@
 rendering
 renderTopicsOn: aCanvas withDetails: details
 	aCanvas div: [ 
-		aCanvas text: 'Topicos: '.
-		aCanvas text: details
+		aCanvas span: [
+			aCanvas text: 'Topicos: '.
+			details do:
+					[ :each | aCanvas text: each. aCanvas space]
+		].
 	]
 	
 	

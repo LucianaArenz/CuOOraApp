@@ -7,6 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"user",
+		"homeLink",
 		"appInstance"
 	],
 	"name" : "UserRenderer",

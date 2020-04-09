@@ -1,3 +1,3 @@
 accessing
-getAllTopics
+getAllTopicsName
 	^topics collect: [ :e | e name ].

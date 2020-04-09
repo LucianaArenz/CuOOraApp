@@ -1,4 +1,4 @@
-deprecated
+calculating
 questionsByInterestFor: aUser
 	| result |
 	result := nil.

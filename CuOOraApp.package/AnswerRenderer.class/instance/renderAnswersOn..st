@@ -6,3 +6,6 @@ renderAnswersOn: aCanvas
 				[ self renderOneAnswerOn: aCanvas withDetails: each ]
 			]
 		].
+	aCanvas horizontalRule.
+	aCanvas div: 'No hay mas respuestas'.
+	self renderNewAnswerOn: aCanvas.

@@ -6,6 +6,7 @@ renderContentOn: aCanvas
 		aCanvas span: user name.
 		aCanvas space.
 		self session user == user
-			ifFalse: [ self renderFollowInformationOn: aCanvas. ].
+			ifFalse: [ self renderFollowInformationOn: aCanvas. ]
+			ifTrue: [ aCanvas text: '(Yo)' ].
 	].
 	self renderUserQuestionsOn: aCanvas.

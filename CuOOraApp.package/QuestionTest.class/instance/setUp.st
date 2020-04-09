@@ -7,6 +7,7 @@ setUp
 	tags:= OrderedCollection new.
 	tag1:= Tag name: 'OO' description: 'Orientacion a Objetos'.
 	tag2:= Tag name: 'test' description: 'just a test'.
+	tags add: tag1; add: tag2.
 	question:= Question
 		author: user1
 		description: 'Orientacion a objetos'

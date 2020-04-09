@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"user"
+		"user",
+		"homeLink"
 	],
 	"name" : "SessionWithUser",
 	"type" : "normal"

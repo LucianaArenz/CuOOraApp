@@ -1,4 +1,4 @@
-deprecated
+tests
 testQuestionsByInterestFor
 	| aDate tag tag2 result |
 	aDate := DateAndTime now.
