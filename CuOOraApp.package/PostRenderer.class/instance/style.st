@@ -2,7 +2,7 @@ rendering
 style 
     ^ 'body {
     color: #222;
-    font-size: 110%;
+    font-size: 90%;
 	 text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
