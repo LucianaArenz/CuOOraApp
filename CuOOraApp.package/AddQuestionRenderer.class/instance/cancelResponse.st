@@ -1,0 +1,3 @@
+callbacks
+cancelResponse
+	self answer.
