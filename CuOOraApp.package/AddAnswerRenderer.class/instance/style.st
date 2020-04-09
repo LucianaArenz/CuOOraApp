@@ -2,7 +2,7 @@ accessing
 style 
     ^ 'body {
     color: #222;
-    font-size: 75%;
+    font-size: 110%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1 {
