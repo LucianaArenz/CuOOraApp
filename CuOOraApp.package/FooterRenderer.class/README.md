@@ -1,0 +1,1 @@
+FooterRenderer comment: 'Renders a footer'

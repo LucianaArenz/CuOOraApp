@@ -17,5 +17,5 @@ renderQuestionDetailsOn: aCanvas withDetails: oneQuestion user: user
 							aCanvas text: ' Respuestas'
 						]
 					].
-					self renderQuestionVotesOn: aCanvas withDetails: oneQuestion andUser: user
+					self renderQuestionVotesOn: aCanvas withDetails: oneQuestion
 			].

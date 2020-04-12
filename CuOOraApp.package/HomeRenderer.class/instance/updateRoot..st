@@ -1,4 +1,4 @@
 updating
 updateRoot: anHtmlRoot
     super updateRoot: anHtmlRoot.
-    anHtmlRoot title: 'CuOOra'.
+    anHtmlRoot title: 'CuOOra | Home'.

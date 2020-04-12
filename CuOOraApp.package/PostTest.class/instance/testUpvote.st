@@ -8,3 +8,6 @@ testUpvote
 	post upvote: user.
 	self assert: post dislikes equals: 0.
 	self assert: post likes equals: 1.
+	post upvote: user2.
+	self assert: post likes equals: 2.
+	self assert: post dislikes equals: 0.

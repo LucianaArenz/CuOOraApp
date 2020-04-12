@@ -1,5 +1,7 @@
 rendering
 renderContentOn: aCanvas
-	self topics: OrderedCollection new.
 	aCanvas header: HeaderRenderer new.
-	self renderQuestionFieldsOn: aCanvas
+	aCanvas div id:'content'; with: [ 
+		self renderQuestionFieldsOn: aCanvas.
+	].
+	aCanvas footer: FooterRenderer new.

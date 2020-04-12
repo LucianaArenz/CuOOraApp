@@ -4,6 +4,9 @@ renderContentOn: aCanvas
 	aCanvas header: HeaderRenderer new.
 	answerRenderer:= AnswerRenderer new.
 	answerRenderer question: question.
-	answerRenderer renderQuestionOn: aCanvas.
-	aCanvas horizontalRule.
-	self renderAnswerFieldsOn: aCanvas.
+	aCanvas div id:'content'; with: [
+		answerRenderer renderQuestionOn: aCanvas.
+		aCanvas horizontalRule.
+		self renderAnswerFieldsOn: aCanvas.
+	].
+	aCanvas footer: FooterRenderer new.

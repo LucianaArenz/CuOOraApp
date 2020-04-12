@@ -1,4 +1,8 @@
 rendering
 renderContentOn: aCanvas
 	self renderHeaderOn: aCanvas.
-	self renderQuestionsOn: aCanvas.
+	aCanvas div id:'content'; with:[
+		self renderQuestionsOn: aCanvas.
+		self renderNewQuestionOn: aCanvas.
+	].
+	aCanvas footer: FooterRenderer new.
