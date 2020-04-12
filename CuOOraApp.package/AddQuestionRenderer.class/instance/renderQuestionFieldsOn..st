@@ -13,7 +13,7 @@ renderQuestionFieldsOn: aCanvas
 			].
 			aCanvas space.
 			aCanvas div: [
-				aCanvas label: 'Topicos: '.
+				aCanvas label: 'Topicos (separados por una coma): '.
 				aCanvas textInput on: #topics of: self .
 			].
 			aCanvas space.
