@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"name"
-	],
+	"instvars" : [ ],
 	"name" : "RegisterComponent",
 	"type" : "normal"
 }

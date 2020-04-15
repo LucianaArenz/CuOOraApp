@@ -7,6 +7,7 @@ style
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header {
+	 height: 5vh;
 	 padding: 5px;
 	 border-bottom: 2px solid black;
 	 background-color: cornflowerblue;
@@ -21,4 +22,12 @@ h1 {
     font-weight: normal;
     margin-bottom: 0.5em;
 }
-form { padding: 5px;}'
+#content { height: 87vh; }
+form { padding: 5px;}
+footer {
+	height: 2.5vh;
+	border-top: 2px solid black;
+	padding: 5px;
+	color: white;
+	background-color: cornflowerblue;
+}'
