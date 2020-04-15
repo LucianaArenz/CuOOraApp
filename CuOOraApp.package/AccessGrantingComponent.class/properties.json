@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"username",
-		"password",
-		"name"
+		"password"
 	],
 	"name" : "AccessGrantingComponent",
 	"type" : "normal"
