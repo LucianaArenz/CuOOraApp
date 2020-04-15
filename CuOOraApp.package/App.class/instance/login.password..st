@@ -4,6 +4,5 @@ login: aUsername password: aPassword
 	|result|
 	result:= self getUser: aUsername.
 	(result password = aPassword)
-	ifNotNil:[self loggedUser: result];
 	ifFalse:[result:= nil].
 	^result.

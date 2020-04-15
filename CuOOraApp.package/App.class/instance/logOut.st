@@ -1,3 +1,0 @@
-callbacks
-logOut
-	loggedUser:= nil.
