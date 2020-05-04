@@ -24,6 +24,7 @@ createListOfQuestions
 	userp := self users detect: [ :each | each username = 'pedro@cuoora.com' ].
 	userd := self users detect: [ :each | each username = 'diego@cuoora.com' ].
 	userj := self users detect: [ :each | each username = 'juan@cuoora.com' ].
+	userp interests add: tag1.
 	self
 		createQuestionWithAuthor: userp
 		creationDate: aDate

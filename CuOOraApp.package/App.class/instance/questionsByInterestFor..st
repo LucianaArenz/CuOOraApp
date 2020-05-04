@@ -1,11 +1,12 @@
 calculating
 questionsByInterestFor: aUser
-	| result |
-	result := nil.
+	| res |
+	res := OrderedCollection new.
 	aUser interests
 		do: [ :aTag | 
-			(result:= questions select: [ :aQuestion |
-				aQuestion topics includes: aTag
-			]) .
-	].
-	^result.
+			questions
+				do: [ :aQuestion | 
+					(aQuestion topics includes: aTag)
+						ifTrue: [ (res includes: aQuestion)
+								ifFalse: [ res add: aQuestion ] ] ] ].
+	^ res

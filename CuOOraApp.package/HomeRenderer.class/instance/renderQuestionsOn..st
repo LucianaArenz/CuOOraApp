@@ -1,12 +1,11 @@
 rendering
 renderQuestionsOn: aCanvas
-	|questionsRenderer recentQuestions|
+	|questionsRenderer relevantQuestions|
 	questionsRenderer := QuestionRenderer new.
-	recentQuestions := OrderedCollection new.
+	relevantQuestions := OrderedCollection new.
 	"only render last 5 questions"
-	appInstance questions reverseDo:[
-		:each | recentQuestions size < 5 ifTrue: [recentQuestions add: each]
-	].
+	
+	relevantQuestions := appInstance questionsByInterestFor:self session user.
 	questionsRenderer appInstance: appInstance.
-	questionsRenderer questions: recentQuestions.
+	questionsRenderer questions: relevantQuestions.
 	questionsRenderer renderQuestionsOn: aCanvas.
