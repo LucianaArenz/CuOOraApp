@@ -1,3 +1,4 @@
 adding
 addQuestion: question
-	questions add: question.
+	questions detect: [ :each | each == question ]
+		ifNone: [ questions add: question ].

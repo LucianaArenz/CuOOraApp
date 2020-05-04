@@ -1,7 +1,6 @@
 tests
 testAddInterestToUser
-	| tag aDate |
-	aDate:= DateAndTime now.
+	| tag |
 	tag := Tag new.
 	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
 	app addInterest: tag toUser: user.

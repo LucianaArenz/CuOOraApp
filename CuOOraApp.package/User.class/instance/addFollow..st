@@ -1,3 +1,4 @@
 adding
 addFollow: anotherUser
-	following add: anotherUser.
+	following detect: [ :each | each = anotherUser ]
+		ifNone: [ following add: anotherUser. ].

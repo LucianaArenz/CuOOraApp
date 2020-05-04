@@ -14,7 +14,7 @@ upvote: aUser
 			dislikes := dislikes - 1.
 			likes:= likes + 1.
 			self removeLog: userLog.
-			userLog action: 'UPVOTE'.
+			userLog:= Log user: aUser action: 'UPVOTE' timestamp: DateAndTime now.
 			self addLog: userLog.
 		]
 	].

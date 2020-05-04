@@ -1,15 +1,24 @@
 tests
 testAddAnswer
-	|answerOne answerTwo|
-	user := User new.
-	user initialize.
-	user answers: OrderedCollection new.
-	answerOne := Answer new.
-	answerOne text: 'hola'.
-	answerOne question: OrderedCollection new.
-	answerTwo := Answer new.
-	answerOne text: 'Mundo'.
-	answerOne question: OrderedCollection new.
+	|questionOne answerOne answerTwo|
+	questionOne:= Question
+		author: user
+		description: 'Orientacion a objetos'
+		title: 'Como diagramar un UML'
+		topics: topics
+		creationDate: date.
+	answerOne:= Answer
+		author: user
+		text: 'Respuesta'
+		question: questionOne
+		creationDate: date.
+	
+	answerTwo := Answer
+		author: user
+		text: 'Respuesta 2'
+		question: questionOne
+		creationDate: date.
+
 	user addAnswer: answerOne.
 	user addAnswer: answerTwo.
 	self assert: user answers size equals: 2.

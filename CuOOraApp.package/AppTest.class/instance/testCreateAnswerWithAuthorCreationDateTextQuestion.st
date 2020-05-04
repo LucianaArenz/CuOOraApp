@@ -20,7 +20,5 @@ testCreateAnswerWithAuthorCreationDateTextQuestion
 		creationDate: aDate
 		text: 'Genial'
 		question: aQuestion.
-	self assert: user answers size equals: 1.
-	self deny: user answers size equals: 0.
 	user answers
 		do: [ :answer | self assert: answer text equals: 'Genial' ]

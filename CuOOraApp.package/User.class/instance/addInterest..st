@@ -1,3 +1,4 @@
 adding
 addInterest: anInterest
-	interests add: anInterest.
+	interests detect: [ :each | each == anInterest ]
+		ifNone:[ interests add: anInterest].
