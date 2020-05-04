@@ -10,3 +10,4 @@ testAddQuestion
 		creationDate: date.
 	user addQuestion: aQuestion.
 	self assert: user questions size equals: 1.
+	self assert: user questions last equals: aQuestion.

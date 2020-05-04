@@ -12,6 +12,7 @@ testDeleteQuestionFromApp
 		title: 'Como diagramar un UML'
 		description: 'Orientacion a objetos'.
 	aQuestion:= user questions first.
-	self assert: app questions size equals: 1.
 	app deleteQuestionFromApp: aQuestion.
-	self assert: app questions size equals: 0.
+	user questions
+		do:
+			[ :question | self deny: question title equals: 'Como diagramar un UML' ]

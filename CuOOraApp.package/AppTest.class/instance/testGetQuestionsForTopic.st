@@ -25,10 +25,12 @@ testGetQuestionsForTopic
 		creationDate: DateAndTime now
 		topics: {tag2}
 		title: 'Como diagramar un UML'
-		description: 'Orientacion a objetos'.
+		description: 'Orientacion a objetos 2'.
 		
 	result:= app getQuestionsForTopic: tag.
 	self assert: result size equals: 1.
+	self assert: result first description equals: 'Orientacion a objetos'.
 	
 	result:= app getQuestionsForTopic: tag2.
 	self assert: result size equals: 1.
+	self assert: result first description equals: 'Orientacion a objetos 2'.

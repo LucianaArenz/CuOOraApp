@@ -7,3 +7,4 @@ testAddAnswer
 	answer1 := Answer author: user2 text: 'test1' question: question creationDate: aDate.
 	question addAnswer: answer1.
 	self assert: question answers size equals: 1.
+	self assert: question answers first equals: answer1.
