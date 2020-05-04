@@ -25,3 +25,4 @@ testRemoveAnswer
 	self assert: user answers size equals: 2.
 	user removeAnswer: answerOne.
 	self assert: user answers size equals: 1.
+	user answers do: [ :each | self deny: each equals: answerOne ]

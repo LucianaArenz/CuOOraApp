@@ -6,4 +6,4 @@ testGetUserLog
 	response:= post getUserLog: user2.
 	self assert: response equals: nil.
 	response:= post getUserLog: user.
-	self assert: response action equals: 'UPVOTE'.
+	self assert: response equals: aLog.

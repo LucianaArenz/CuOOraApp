@@ -22,4 +22,5 @@ testAddAnswer
 	user addAnswer: answerOne.
 	user addAnswer: answerTwo.
 	self assert: user answers size equals: 2.
-	self deny: user answers equals: 0
+	self deny: user answers equals: 0.
+	self assert: user answers last equals: answerTwo.
