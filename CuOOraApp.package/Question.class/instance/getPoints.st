@@ -1,3 +1,3 @@
 removing
 getPoints
-	^ likes - dislikes + 50.
+	^ likes - dislikes + 20.

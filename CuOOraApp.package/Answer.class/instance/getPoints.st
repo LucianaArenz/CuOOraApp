@@ -1,3 +1,3 @@
 accesing
 getPoints
-	^ likes - dislikes + 20.
+	^ likes - dislikes + 50.
