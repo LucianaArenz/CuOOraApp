@@ -1,14 +1,15 @@
 test
 testGetQuestionsForTopic
 	|tag tag2 result|
-	tag:= Tag new.
-	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
+	app createTopicWithName: 'OO' description: 'Orientacion a objetos'.
+	tag:= app getTagFromNameOrNil: 'OO'.
 	
 	result:= app getQuestionsForTopic: tag.
 	self assert: result isEmpty equals: true.
 	
-	tag2:= Tag new.
-	tag initializeWithName: 'OO2' description: 'Orientacion a objetos 2'.
+	
+	app createTopicWithName: 'OO2' description: 'Orientacion a objetos 2'.
+	tag2:= app getTagFromNameOrNil: 'OO2'.
 	
 	result:= app getQuestionsForTopic: tag2.
 	self assert: result isEmpty equals: true.

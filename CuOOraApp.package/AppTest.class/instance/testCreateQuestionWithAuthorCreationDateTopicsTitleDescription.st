@@ -2,13 +2,12 @@ tests
 testCreateQuestionWithAuthorCreationDateTopicsTitleDescription
 	| aDate tag |
 	aDate := DateAndTime now.
-	user initializeWithName: 'Lu' password: '1234' creationDate: aDate name: 'Lu'.
-	tag := Tag new.
-	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
+	app createTopicWithName: 'Test de Unidad' description: 'Test de Unidad'.
+	tag:= app getTagFromNameOrNil: 'Test de Unidad'.
 	app
 		createQuestionWithAuthor: user
 		creationDate: aDate
-		topics: tag
+		topics: {tag}
 		title: 'Como diagramar un UML'
 		description: 'Orientacion a objetos'.
 	self assert: app questions size equals: 1.

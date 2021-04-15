@@ -4,8 +4,8 @@ renderTopicsOn: aCanvas withDetails: details
 		aCanvas span: [
 			aCanvas text: 'Topicos: '.
 			details do:
-					[ :each | aCanvas text: each. aCanvas space]
+					[ :each | aCanvas text: each , ' ']
 		].
-	]
+	].
 	
 	

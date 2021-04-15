@@ -24,7 +24,7 @@ createListOfQuestions
 	userp := self users detect: [ :each | each username = 'pedro@cuoora.com' ].
 	userd := self users detect: [ :each | each username = 'diego@cuoora.com' ].
 	userj := self users detect: [ :each | each username = 'juan@cuoora.com' ].
-	userp interests add: tag1.
+	userd interests add: tag1.
 	self
 		createQuestionWithAuthor: userp
 		creationDate: aDate
@@ -37,9 +37,9 @@ createListOfQuestions
 		createQuestionWithAuthor: userd
 		creationDate: aDate
 		topics: tagP2
-		title: 'Que significa #messageNotUnderstood?'
+		title: '¿Qué significa #messageNotUnderstood?'
 		description: 'blabla'.
-		q1:= self questions detect: [:q | q title = 'Que significa #messageNotUnderstood?' ].
+		q1:= self questions detect: [:q | q title = '¿Qué significa #messageNotUnderstood?' ].
 	self createAnswerWithAuthor: userp creationDate: aDate text: 'Significa que el objeto que recibio el mensaje no encontró ningún método para ejercutar en respuesta' question: q1.
 	
 	self

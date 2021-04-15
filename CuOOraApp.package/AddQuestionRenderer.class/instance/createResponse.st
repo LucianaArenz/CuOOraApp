@@ -4,7 +4,7 @@ createResponse
 	someTopics:= OrderedCollection new.
 	topicNames:= OrderedCollection new.
 	topicNames:= topics splitOn: ','.
-	topicNames do: [ :each | someTopics add: (Tag name:each trimBoth description: each trimBoth) ].
+	someTopics:= topicNames collect: [ :each | (Tag name:each trimBoth description: each trimBoth) ].
 	appInstance createQuestionWithAuthor:
 		self session user
 		creationDate: DateAndTime now

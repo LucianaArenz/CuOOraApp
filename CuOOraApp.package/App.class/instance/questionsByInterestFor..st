@@ -6,7 +6,7 @@ questionsByInterestFor: aUser
 	
 	^questionsUser"
  	|questionsTopics questionsFollowers result|
-	result:= SortedCollection sortBlock: [:each1 :each2 | each1 creationDate < each2 creationDate].
+	result:= SortedCollection sortBlock: [:each1 :each2 | each1 creationDate > each2 creationDate].
 	questionsFollowers:= OrderedCollection new.
 	(aUser interests isEmpty)
 		ifFalse: [questionsTopics:= questions select: [:question| (question checkTag: aUser interests)].

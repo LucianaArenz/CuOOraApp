@@ -2,13 +2,12 @@ test
 testDeleteQuestionFromApp
 	| aDate tag aQuestion |
 	aDate := DateAndTime now.
-	user initializeWithName: 'Lu' password: '1234' creationDate: aDate name: 'Lu'.
-	tag := Tag new.
-	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
+	app createTopicWithName: 'OO' description: 'Orientacion a objetos'.
+	tag:= app getTagFromNameOrNil: 'OO'.
 	app
 		createQuestionWithAuthor: user
 		creationDate: aDate
-		topics: tag
+		topics: {tag}
 		title: 'Como diagramar un UML'
 		description: 'Orientacion a objetos'.
 	aQuestion:= user questions first.

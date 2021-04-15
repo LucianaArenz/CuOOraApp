@@ -4,12 +4,12 @@ testGetQuestionAnswersFromQuestion
 	aDate := DateAndTime now.
 	app createUser: 'Lu' password: '1234' name: 'Lu'.
 	userAuthor:= app getUser: 'Lu'.
-	tag := Tag new.
-	tag initializeWithName: 'OO' description: 'Orientacion a objetos'.
+	app createTopicWithName: 'OO' description: 'Orientacion a objetos'.
+	tag:= app getTagFromNameOrNil: 'OO'.
 	app
 		createQuestionWithAuthor: userAuthor
 		creationDate: aDate
-		topics: tag
+		topics: {tag}
 		title: 'Como diagramar un UML'
 		description: 'Orientacion a objetos'.
 	aQuestion:= userAuthor questions first.

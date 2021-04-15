@@ -2,7 +2,11 @@ rendering
 renderOneAnswerOn: aCanvas withDetails: answer
 	aCanvas div: [ 
 		aCanvas text: 'Respuesta de '.
-		aCanvas text: answer author name.
+		aCanvas anchor
+			callback: [ self navigateToUser: answer author ];
+			with: [
+				aCanvas text: answer author name.
+			].
 	].
 	aCanvas div: [
 		aCanvas text: answer text.
